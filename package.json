@@ -19,7 +19,6 @@
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.0.0",
-    "express": "^4.16.3",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass": "^4.11.0",
     "prettier": "^1.15.3",
@@ -32,7 +31,8 @@
   },
   "dependencies": {
     "moment": "^2.22.1",
-    "sendbird": "^3.0.111"
+    "sendbird": "^3.0.111",
+    "express": "^4.16.3"
   },
   "engines": {
     "node": "10.x"
