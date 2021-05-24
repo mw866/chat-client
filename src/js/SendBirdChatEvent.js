@@ -29,6 +29,16 @@ class SendBirdChatEvent {
     const handler = new this.sb.ChannelHandler();
     handler.onMessageReceived = (channel, message) => {
       if (this.onMessageReceived) {
+        console.log(channel, message);
+        if (message.messageType === 'admin') {
+          try {
+            const timestamp = message.data
+            console.log(timestamp)
+            alert(`Server time: ${timestamp}  - ${message.message}`)
+          } catch(e) {
+            console.log(e)
+          } 
+        }
         this.onMessageReceived(channel, message);
       }
     };
