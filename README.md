@@ -1,17 +1,14 @@
-# SendBird JavaScript Web Basic Sample
-This is full screen chat sample like Slack using the [Sendbird SDK](https://github.com/sendbird/SendBird-SDK-JavaScript) for desktop browsers.
+# Chat Client 
+A web client for group chats on desktop browsers based on [SendBird JavaScript Web Basic Sample](https://github.com/sendbird/SendBird-JavaScript/tree/master/web-basic-sample).
 
-1. [Demo](#demo)
-1. [Run the sample](#run-the-sample)
-1. [Customizing the sample](#customizing-the-sample)
+The client supports open channels, group channels, and read receipts using  [SendBird  JavaScript SDK](https://github.com/sendbird/SendBird-SDK-JavaScript) and [Express](https://expressjs.com/).
 
-## [Demo](https://sample.sendbird.com/basic)
-You can try out a live demo from the link [here](https://sample.sendbird.com/basic).
+## Demo
 
-> If you want to legacy basic sample used jQuery, you can find the [Legacy tag](https://github.com/sendbird/SendBird-JavaScript/tree/Legacy(WebBasic)). 
+The demo client is available at https://chat-client.chriswang.tech/
 
 
-## Run the sample
+## Getting Started
 1. Install packages
 
 > Require that you have Node v8.x+ installed. 
@@ -20,7 +17,13 @@ You can try out a live demo from the link [here](https://sample.sendbird.com/bas
 npm install
 ```
 
-2. Run
+2. Build
+
+```
+npm build
+```
+
+3. Run
 
 ```bash
 npm start
@@ -35,7 +38,7 @@ If you want to put some changes into the sample, you should build it using `webp
 
 ```bash
 npm install
-``` 
+```
 
 2. Modify files
 If you want to change `APP_ID`, change `APP_ID` in `./src/js/const.js` to the other `APP_ID` you want.  
@@ -43,14 +46,12 @@ You can test the sample with local server by running the following command.
 
 ```bash
 npm run start:dev
-``` 
+```
 
 3. Build the sample
-When the modification is complete, you'll need to bundle the file using `webpack`. The bundled files are created in the `dist` folder.  
+When the modification is complete, you'll need to bundle the file using `webpack`. The bundled files are created in the `dist` folder. 
 Please check `webpack.config.js` for settings.    
 
 ```bash
 npm run build
 ```
-
-> The `npm start` command contains `npm run build`. Check the scripts part of the package.json file.
