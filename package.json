@@ -1,11 +1,12 @@
 {
   "name": "chat-client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Based on Sendbird Web Basic Sample",
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/webpack --mode=development",
     "build": "./node_modules/.bin/webpack --mode=production",
+    "start:dev": "./node_modules/.bin/webpack-dev-server",
     "start": "node server.js"
   },
   "author": "Chris Wang",
